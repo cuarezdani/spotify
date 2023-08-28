@@ -4,8 +4,16 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component: HomepageComponent
+    path: 'tracks',
+    loadChildren:() => import('@modules/tracks/tracks.modules').then(m => m.TracksModule)
+  },
+  {
+    path: 'favorite',
+    loadChildren:() => import('@modules/favorite/favorite.modules').then(m => m.favoriteModule)
+  },
+  {
+    path: 'history',
+    loadChildren:() => import('@modules/history/history.modules').then(m => m.historyModule)
   }
 ];
 
