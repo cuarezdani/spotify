@@ -5,15 +5,15 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 const routes: Routes = [
   {
     path: 'tracks',
-    loadChildren:() => import('@modules/tracks/tracks.modules').then(m => m.TracksModule)
+    loadChildren:() => import('@modules/tracks/tracks.module').then(m => m.TracksModule)
   },
   {
     path: 'favorite',
-    loadChildren:() => import('@modules/favorite/favorite.modules').then(m => m.favoriteModule)
+    loadChildren:() => import('@modules/favorite/favorite.module').then(m => m.FavoriteModule)
   },
   {
     path: 'history',
-    loadChildren:() => import('@modules/history/history.modules').then(m => m.historyModule)
+    loadChildren:() => import('@modules/history/history.module').then(m => m.HistoryModule)
   }
 ];
 
