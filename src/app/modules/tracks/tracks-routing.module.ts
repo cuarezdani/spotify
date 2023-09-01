@@ -5,7 +5,9 @@ import { TracksPageComponent } from './page/tracks-page/tracks-page.component';
 const routes: Routes = [
   {
     path: '',
-    component: TracksPageComponent
+    component: TracksPageComponent,
+    // se coloca outlet: 'child' para hacer referencia a el nombre que se coloco en el homepage.component.html
+    outlet: 'child'
   }
 ];
 
