@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "resolveJsonModule": true,
+    "resolveJsonModule": true,   //se agrego para que pueda leer la inf de la carpeta data>tracks.json
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
