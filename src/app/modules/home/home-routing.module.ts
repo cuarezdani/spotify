@@ -8,7 +8,7 @@ const routes: Routes = [
     loadChildren:() => import('@modules/tracks/tracks.module').then(m => m.TracksModule)
   },
   {
-    path: 'favorite',
+    path: 'favorites',
     loadChildren:() => import('@modules/favorite/favorite.module').then(m => m.FavoriteModule)
   },
   {
